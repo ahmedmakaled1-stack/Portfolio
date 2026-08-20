@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed | Senior Front-End Developer</title>
+    <!-- Google Fonts: Poppins (English) & Cairo (Arabic) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link  rel="icon" type="image/png" href="img/favicon.png">
+</head>
+
+<body>
+
+    <header>
+        <div class="menu-btn" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <div class="side-nav" id="sideNav">
+            <a href="javascript:void(0)" class="close-btn" onclick="toggleMenu()">&times;</a>
+            <a href="#home" onclick="toggleMenu()" data-en="Home" data-ar="الرئيسية">Home</a>
+            <a href="#about" onclick="toggleMenu()" data-en="About" data-ar="من أنا">About</a>
+            <a href="#skills" onclick="toggleMenu()" data-en="Skills" data-ar="مهاراتي">Skills</a>
+            <a href="#portfolio" onclick="toggleMenu()" data-en="Portfolio" data-ar="أعمالي">Portfolio</a>
+            <a href="#contact" onclick="toggleMenu()" data-en="Contact" data-ar="اتصل بي">Contact</a>
+        </div>
+
+        <a href="#home" class="logo">DEV.AHMED</a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home" data-en="Home" data-ar="الرئيسية">Home</a></li>
+                <li><a href="#about" data-en="About" data-ar="من أنا">About</a></li>
+                <li><a href="#skills" data-en="Skills" data-ar="مهاراتي">Skills</a></li>
+                <li><a href="#portfolio" data-en="Portfolio" data-ar="أعمالي">Portfolio</a></li>
+                <li><a href="#contact" data-en="Contact" data-ar="اتصل بي">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Theme & Language Controls -->
+        <div class="header-controls">
+            <button id="langToggle" class="control-btn" onclick="toggleLanguage()">AR</button>
+            <button id="themeToggle" class="control-btn" onclick="toggleTheme()" aria-label="Toggle Theme">
+                <i class="fas fa-sun"></i>
+            </button>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                
+                <span data-en=" I am a " data-ar="أنا"> I am a </span> <br><span id="element"></span>
+                
+            </h1>
+            <p class="bio-text"
+                data-en='"Passionate Front-End Developer with 2 years of experience in transforming design concepts into high-performance, pixel-perfect code. I specialize in building scalable company websites for startups, turning your digital vision into a professional reality with clean and maintainable architecture."'
+                data-ar='"مطور واجهات أمامية شغوف بخبرة عامين في تحويل مفاهيم التصميم إلى كود عالي الأداء ومثالي البكسل. متخصص في بناء مواقع شركات قابلة للتوسع للشركات الناشئة، وتحويل رؤيتك الرقمية إلى واقع احترافي ببنية نظيفة وسهلة الصيانة."'>
+                "Passionate Front-End Developer with 2 years of experience in transforming design concepts into
+                high-performance, pixel-perfect code. I specialize in building scalable company websites for startups,
+                turning your digital vision into a professional reality with clean and maintainable architecture."
+            </p>
+            <div class="social-links-container">
+                <a href="https://github.com/ahmedmakaled1-stack" target="_blank" aria-label="GitHub"
+                    class="social-btn"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ahmed-mohammed-dev12/" target="_blank" aria-label="LinkedIn"
+                    class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.facebook.com/ahmed.makaled.9" target="_blank" aria-label="Facebook"
+                    class="social-btn"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/dev__ahmed12/" target="_blank" aria-label="Instagram"
+                    class="social-btn"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/Ahmed72771421" target="_blank" aria-label="Twitter" class="social-btn"><i
+                        class="fab fa-x-twitter"></i></a>
+                <a href="https://wa.me/201109435971" target="_blank" aria-label="WhatsApp" class="social-btn"><i
+                        class="fab fa-whatsapp"></i></a>
+            </div>
+
+            <!-- Hero CTA Buttons -->
+            <div class="hero-cta">
+                <a href="Ahmed_Mohammed_Shaban_CV.pdf" download class="cta-btn cta-primary">
+                    <i class="fas fa-download"></i>
+                    <span data-en="Download CV" data-ar="تحميل السيرة الذاتية">Download CV</span>
+                </a>
+                <a href="https://wa.me/201109435971" target="_blank" class="cta-btn cta-secondary">
+                    <i class="fab fa-whatsapp"></i>
+                    <span data-en="Let's Talk" data-ar="تواصل معي">Let's Talk</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-img-wrapper">
+            <div class="hero-img"></div>
+            <div class="hero-badge badge-1">
+                <i class="fas fa-code"></i>
+                <span data-en="Front-End Dev" data-ar="مطور واجهات">Front-End Dev</span>
+            </div>
+            <div class="hero-badge badge-2">
+                <i class="fas fa-briefcase"></i>
+                <span data-en="2+ Years Exp" data-ar="خبرة +2 سنة">2+ Years Exp</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2 data-en="About Me" data-ar="من أنا">About Me</h2>
+        <div class="about-grid">
+            <div class="about-img-container">
+                <img src="img/p4.png" class="about-img" alt="Ahmed Profile">
+            </div>
+            <div class="about-info">
+                <p class="about-text"
+                    data-en="I specialize in building clean, user-friendly, and high-performance interfaces. With a strong foundation in modern JavaScript and CSS, I am always pushing the boundaries of what is possible in the browser."
+                    data-ar="أنا متخصص في بناء واجهات نظيفة وسهلة الاستخدام وعالية الأداء. مع أساس قوي في لغة جافا سكريبت الحديثة وتنسيقات CSS، أسعى دائماً لتجاوز حدود الممكن في المتصفح.">
+                    I specialize in building clean, user-friendly, and high-performance interfaces. With a strong
+                    foundation in modern JavaScript and CSS, I am always pushing the boundaries of what is possible in
+                    the browser.
+                </p>
+                
+                <!-- Quick Stats Grid -->
+                <div class="about-stats-grid">
+                    <div class="stat-card">
+                        <span class="stat-num">2+</span>
+                        <span class="stat-label" data-en="Years Experience" data-ar="سنوات خبرة">Years Experience</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-num">10+</span>
+                        <span class="stat-label" data-en="Completed Projects" data-ar="مشاريع منجزة">Completed Projects</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-num">5+</span>
+                        <span class="stat-label" data-en="Happy Clients" data-ar="عملاء سعداء">Happy Clients</span>
+                    </div>
+                </div>
+
+                <!-- Personal Info Grid -->
+                <div class="personal-info-grid">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span data-en="Location: Giza, Egypt" data-ar="الموقع: الجيزة، مصر">Location: Giza, Egypt</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email: ahmedmakaled1@gmail.com</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-briefcase"></i>
+                        <span data-en="Freelance: Available" data-ar="العمل الحر: متاح">Freelance: Available</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Services Grid (What I Do) -->
+        <h3 class="services-title" data-en="What I Do" data-ar="ماذا أقدم؟">What I Do</h3>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-laptop-code"></i>
+                <h4 data-en="Responsive Web Dev" data-ar="تطوير واجهات متجاوبة">Responsive Web Dev</h4>
+                <p data-en="Building pixel-perfect, highly responsive layouts that fit all screen sizes seamlessly."
+                   data-ar="بناء واجهات مطابقة تماماً للتصميم ومتجاوبة بالكامل لتعمل على جميع الشاشات.">Building pixel-perfect, highly responsive layouts that fit all screen sizes seamlessly.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-tachometer-alt"></i>
+                <h4 data-en="Performance Optimization" data-ar="تحسين السرعة والأداء">Performance Optimization</h4>
+                <p data-en="Making sites load blazingly fast and ensuring top SEO best practices."
+                   data-ar="تسريع المواقع لتشحن بلحظات مع ضمان توافق كامل مع قواعد السيو (SEO).">Making sites load blazingly fast and ensuring top SEO best practices.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-puzzle-piece"></i>
+                <h4 data-en="Clean API Integration" data-ar="ربط وتكامل البرمجيات">Clean API Integration</h4>
+                <p data-en="Connecting client-side logic to back-end endpoints, services, and dynamic database forms."
+                   data-ar="ربط الواجهات الأمامية بالخوادم والنظم الخلفية والنماذج التفاعلية بكفاءة.">Connecting client-side logic to back-end endpoints, services, and dynamic database forms.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2 data-en="Technical Expertise" data-ar="الخبرات التقنية">Technical Expertise</h2>
+        <div class="skills-grid">
+            <div class="skill-card"><i class="fa-brands fa-html5"></i>
+                <h3>HTML5</h3>
+            </div>
+            <div class="skill-card"><i class="fa-brands fa-css3-alt"></i>
+                <h3>CSS3</h3>
+            </div>
+            <div class="skill-card"><i class="fa-brands fa-bootstrap"></i>
+                <h3>Bootstrap</h3>
+            </div>
+            <div class="skill-card"><i class="fa-brands fa-js"></i>
+                <h3>JavaScript</h3>
+            </div>
+            <div class="skill-card"><i class="fa-solid fa-code"></i>
+                <h3>jQuery</h3>
+            </div>
+            <div class="skill-card"><i class="fa-brands fa-react"></i>
+                <h3>ReactJS</h3>
+            </div>
+            <div class="skill-card"><i class="fa-solid fa-file-code"></i>
+                <h3>JSON</h3>
+            </div>
+            <div class="skill-card"><i class="fa-brands fa-github"></i>
+                <h3>Git & GitHub</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h2 data-en="My Portfolio" data-ar="معرض أعمالي">My Portfolio</h2>
+        <div class="work-grid">
+            <div class="work-card">
+                <img src="img/p5.png" alt="E-Commerce Project">
+                <div class="work-overlay">
+                    <div class="overlay-content">
+                        <h3 data-en="Food-Lover-main" data-ar="محب الطعام الرئيسي">Food-Lover-main</h3>
+                        <p data-en="React & Tailwind" data-ar="إتش تي إم إل 5 وسي إس إس 3 وجافا سكريبت بوتستراب">React &
+                            Tailwind</p>
+                        <a href="https://ahmedmakaled1-stack.github.io/Food-Lover-main/" target="_blank"
+                            class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="work-card">
+                <img src="img/p6.png" alt="Dashboard Project">
+                <div class="work-overlay">
+                    <div class="overlay-content">
+                        <h3 data-en="Car_Rental" data-ar="تأجير السيارات">Car_Rental</h3>
+                        <p data-en="Html & Css & jQuery" data-ar="إتش تي إم إل 5 وسي إس إس 3 جي كويري">Html & Css &
+                            jQuery</p>
+                        <a href="https://ahmedmakaled1-stack.github.io/Car_Rental/" target="_blank"
+                            class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="work-card">
+                <img src="img/p7.png" alt="SaaS Project">
+                <div class="work-overlay">
+                    <div class="overlay-content">
+                        <h3 data-en="restaurant" data-ar="مطعم">restaurant</h3>
+                        <p data-en="HTML5, CSS3 & JS" data-ar="إتش تي إم إل 5 وسي إس إس 3 وجافا سكريبت">HTML5, CSS3 & JS
+                        </p>
+                        <a href="https://ahmedmakaled1-stack.github.io/Feane/" target="_blank" class="portfolio-link"><i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="work-card">
+                <img src="img/p8.png" alt="Task App Project">
+                <div class="work-overlay">
+                    <div class="overlay-content">
+                        <h3 data-en="anon-ecommerce-website-master" data-ar="مدير موقع التجارة الإلكترونية المجهول">
+                            anon-ecommerce-website-master</h3>
+                        <p data-en="React Native" data-ar="رياكت نيتيف">React Native</p>
+                        <a href="https://ahmedmakaled1-stack.github.io/anon-ecommerce-website-master/" target="_blank"
+                            class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="work-card">
+                <img src="img/p9.png" alt="Fitness Tracker Project">
+                <div class="work-overlay">
+                    <div class="overlay-content">
+                        <h3 data-en="Qran_Kareem" data-ar="قرآن كريم">Qran_Kareem</h3>
+                        <p data-en="Html & Css & Bootstrap & jQuery"
+                            data-ar="إتش تي إم إل 5 وسي إس إس 3 بوتستراب جي كويري">Html & Css & Bootstrap & jQuery</p>
+                        <a href="https://ahmedmakaled1-stack.github.io/Quran/" target="_blank" class="portfolio-link"><i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="work-card">
+                <img src="img/p10.png" alt="Creative Portfolio Project">
+                <div class="work-overlay">
+                    <div class="overlay-content">
+                        <h3 data-en="Sweet_Cake" data-ar="كعكة حلوة">Sweet_Cake</h3>
+                        <p data-en="Html & Css & Bootstrap & jQuery"
+                            data-ar="إتش تي إم إل 5 وسي إس إس 3 بوتستراب جي كويري">Html & Css & Bootstrap & jQuery</p>
+                        <a href="https://ahmedmakaled1-stack.github.io/Sweet_Cake/" target="_blank"
+                            class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Call To Action (CTA) Banner -->
+    <section id="cta" class="cta-banner">
+        <div class="cta-banner-content">
+            <h2 data-en="Have a Project in Mind?" data-ar="لديك مشروع في ذهنك؟">Have a Project in Mind?</h2>
+            <p data-en="Let's build something amazing together! Reach out today and let's turn your ideas into a professional digital reality."
+               data-ar="دعنا نبني شيئاً رائعاً معاً! تواصل معي اليوم ولنحول أفكارك إلى واقع رقمي احترافي.">Let's build something amazing together! Reach out today and let's turn your ideas into a professional digital reality.</p>
+            <a href="https://wa.me/201109435971" target="_blank" class="cta-banner-btn">
+                <i class="fab fa-whatsapp"></i>
+                <span data-en="Start a Conversation" data-ar="ابدأ المحادثة">Start a Conversation</span>
+            </a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-box">
+            <h2 data-en="Contact Me" data-ar="تواصل معي ">Contact Me</h2>
+            <form id="contactForm">
+                <input type="text" name="name" placeholder="Your Name" data-en="Your Name" data-ar="الاسم الكريم"
+                    required>
+                <input type="email" name="email" placeholder="Your Email" data-en="Your Email"
+                    data-ar="البريد الإلكتروني" required>
+                <textarea name="message" placeholder="Your Message" data-en="Your Message" data-ar="رسالتك" rows="5" required> </textarea>
+                <button type="submit" class="btn-submit" data-en="SEND MESSAGE" data-ar="إرسال الرسالة"></button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p data-en="&copy; 2026 AHMED.DEV. All rights reserved."
+                data-ar="&copy; 2026 أحمد.مطور. جميع الحقوق محفوظة.">&copy; 2026 AHMED.DEV. All rights reserved.</p>
+            <div class="footer-socials">
+                <a href="https://github.com/ahmedmakaled1-stack" target="_blank" aria-label="GitHub"
+                    class="social-btn"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ahmed-mohammed-dev12/" target="_blank" aria-label="LinkedIn"
+                    class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.facebook.com/ahmed.makaled.9" target="_blank" aria-label="Facebook"
+                    class="social-btn"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/dev__ahmed12/" target="_blank" aria-label="Instagram"
+                    class="social-btn"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/Dev_Ahmed12" target="_blank" aria-label="Twitter" class="social-btn"><i
+                        class="fab fa-x-twitter"></i></a>
+                <a href="https://wa.me/201124238933" target="_blank" aria-label="WhatsApp" class="social-btn"><i
+                        class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll To Top Button with Progress Ring -->
+    <div id="scrollTopBtn" onclick="scrollToTop()" title="Back to top">
+        <svg class="scroll-progress-ring" viewBox="0 0 50 50">
+            <circle class="ring-bg" cx="25" cy="25" r="20"/>
+            <circle id="ringProgress" class="ring-fill" cx="25" cy="25" r="20"/>
+        </svg>
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <!-- EmailJS Integration -->
+    <script>
+        emailjs.init("1Aa6YMwBsHdYmk1RD");
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            emailjs.send("service_i8abunt", "template_2gnmsgs", {
+                name: this.name.value,
+                email: this.email.value,
+                message: this.message.value
+            }).then(() => {
+                alert(document.documentElement.lang === 'ar' ? "تم إرسال الرسالة بنجاح!" : "Message sent successfully!");
+                this.reset();
+            });
+        });
+    </script>
+
+    <!-- Theme & Language Toggling Scripts -->
+    <script>
+        let typedInstance = null;
+
+        // Initialize Typed.js with correct language strings
+        function initTyped(lang) {
+            if (typedInstance) {
+                typedInstance.destroy();
+            }
+
+            const strings = lang === 'ar' ? [
+                'مطور واجهات أمامية',
+                'مهتم بتجربة المستخدم',
+                'محلل مشكلات برمجية',
+                'مبرمج ومصمم إبداعي'
+            ] : [
+                'Front-End Developer',
+                'UI/UX Enthusiast',
+                'Problem Solver',
+                'Creative Coder'
+            ];
+
+            typedInstance = new Typed('#element', {
+                strings: strings,
+                typeSpeed: 50,      // سرعة الكتابة
+                backSpeed: 30,      // سرعة المسح
+                loop: true,         // تكرار الحركة
+                showCursor: true,   // إظهار المؤشر
+                cursorChar: '|'     // شكل المؤشر
+            });
+        }
+
+        // Theme Toggle Logic
+        function toggleTheme() {
+            const currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('portfolio-theme', newTheme);
+
+            // Update theme icon
+            const themeIcon = document.querySelector('#themeToggle i');
+            if (newTheme === 'light') {
+                themeIcon.className = 'fas fa-moon';
+            } else {
+                themeIcon.className = 'fas fa-sun';
+            }
+        }
+
+        // Language Toggle Logic
+        function toggleLanguage() {
+            const currentLang = document.documentElement.lang || 'en';
+            const newLang = currentLang === 'en' ? 'ar' : 'en';
+
+            setLanguage(newLang);
+        }
+
+        function setLanguage(lang) {
+            document.documentElement.lang = lang;
+            document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+
+            // Update language toggle button text (shows the other option)
+            const langBtn = document.getElementById('langToggle');
+            langBtn.textContent = lang === 'en' ? 'AR' : 'EN';
+
+            // Translate elements that have data attributes
+            document.querySelectorAll('[data-en]').forEach(el => {
+                el.textContent = el.getAttribute('data-' + lang);
+            });
+
+            // Translate form inputs placeholders
+            document.querySelectorAll('input[data-en], textarea[data-en]').forEach(el => {
+                el.placeholder = el.getAttribute('data-' + lang);
+            });
+
+            // Re-initialize Typed.js strings for the target language
+            initTyped(lang);
+
+            localStorage.setItem('portfolio-lang', lang);
+        }
+
+        // Mobile Menu Toggle Script
+        function toggleMenu() {
+            var nav = document.getElementById("sideNav");
+            if (nav.style.width === "250px") {
+                nav.style.width = "0";
+            } else {
+                nav.style.width = "250px";
+            }
+        }
+
+        // Scroll Reveal Animation Observer
+        const observerOptions = {
+            threshold: 0.15,
+            rootMargin: "0px 0px -50px 0px"
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('reveal-section');
+            observer.observe(section);
+        });
+
+        // Initialize theme and language on DOM load
+        document.addEventListener('DOMContentLoaded', () => {
+            // Theme setup
+            const savedTheme = localStorage.getItem('portfolio-theme') || 'dark';
+            document.documentElement.setAttribute('data-theme', savedTheme);
+            const themeIcon = document.querySelector('#themeToggle i');
+            if (savedTheme === 'light') {
+                themeIcon.className = 'fas fa-moon';
+            } else {
+                themeIcon.className = 'fas fa-sun';
+            }
+
+            // Language setup
+            const savedLang = localStorage.getItem('portfolio-lang') || 'en';
+            setLanguage(savedLang);
+        });
+
+        // ===== Scroll To Top with SVG Progress Ring =====
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function updateScrollRing() {
+            const btn = document.getElementById('scrollTopBtn');
+            const ring = document.getElementById('ringProgress');
+            if (!btn || !ring) return;
+
+            const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+            const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const progress = scrollHeight > 0 ? scrollTop / scrollHeight : 0;
+
+            // حساب محيط الدائرة (2 * π * r = 2 * 3.14159 * 20 ≈ 125.66)
+            const circumference = 2 * Math.PI * 20;
+            const dashOffset = circumference * (1 - progress);
+            ring.style.strokeDashoffset = dashOffset;
+
+            // إظهار الزرار بعد 150px سكرول
+            if (scrollTop > 150) {
+                btn.classList.add('visible');
+            } else {
+                btn.classList.remove('visible');
+            }
+        }
+
+        window.addEventListener('scroll', updateScrollRing);
+        window.addEventListener('load', updateScrollRing);
+
+        let calcScrollValue = () => {
+            let scrollProgress = document.getElementById("progressWrap");
+            if (!scrollProgress) return; // حماية في حال لم يتعرف على العنصر بعد
+
+            let pos = document.documentElement.scrollTop;
+
+            // حساب ارتفاع الصفحة الفعلي ناقص ارتفاع الشاشة
+            let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+
+            // حساب النسبة المئوية للسكرول
+            let scrollValue = Math.round((pos * 100) / calcHeight);
+
+            // إظهار الزرار بعد النزول 100 بيكسل
+            if (pos > 100) {
+                scrollProgress.style.display = "grid";
+            } else {
+                scrollProgress.style.display = "none";
+            }
+
+            // تحديث متغير الـ CSS عشان تأثير الماية اللي بتتملي
+            scrollProgress.style.setProperty('--scroll-fill', `${scrollValue}%`);
+        };
+
+        // تشغيل الدالة مع السكرول وعند تحميل الصفحة
+        window.addEventListener('scroll', calcScrollValue);
+        window.addEventListener('load', () => {
+            calcScrollValue();
+
+            // وضع حدث الضغط هنا يضمن أن المتصفح قد قرأ العنصر تماماً
+            let scrollProgress = document.getElementById("progressWrap");
+            if (scrollProgress) {
+                scrollProgress.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    // طريقة بديلة وأكثر توافقاً مع المتصفحات للصعود لأعلى بنعومة
+                    window.scroll({
+                        top: 0,
+                        left: 0,
+                        behavior: 'smooth'
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
